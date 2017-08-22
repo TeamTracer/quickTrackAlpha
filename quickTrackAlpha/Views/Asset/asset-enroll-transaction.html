@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>QuickTrack | Enroll Asset Transaction</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main Page CSS -->
+    <link href="dist/css/main-page.css" rel="stylesheet">
+    <!-- Font-awesome CSS -->
+    <link href="dist/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="dist/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="color: white;"><strong>QuickTrack</strong></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ><a href="#" id="settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li ><a href="#" id="help"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation"><a href="#" id="notifications">Notifications <span class="badge " style="background-color: #007399;">10</span></a></li>
+            <li ><a href="#" id="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    <h3 class="page-title">Asset Enroll Transactions</h3><br>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-info" style="border: none;">
+            <div class="panel-body">
+              <table id="example" class="table table-hover dataTable" cellspacing="0" width="100%">
+                  <thead style="text-align: center; background-color: #165469; color: white;">
+                    <tr>
+                      <th></th>
+                      <th>Date of Purchase</th>
+                      <th>RFID Tag</th>
+                      <th>Asset Name</th>
+                      <th>Brand / Model</th>
+                      <th>Department</th>
+                      <th>Quantity / Unit</th>
+                      <th></th>
+                    </tr> 
+                  </thead>
+                  <tbody style="text-align: center;">
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>01-01-2017</td>
+                      <td>0002514568</td>
+                      <td>Laptop</td>
+                      <td>ASUS</td>
+                      <td>Sales Department</td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+            <!-- <div class="col-lg-12">
+              <nav aria-label="Page navigation">
+                <ul class="pagination pull-right">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Content of Transaction -->
+    <div id="transaction" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-title">
+              <h4>Transaction Details</h4>
+            </div>
+          </div>
+          <div class="modal-body" id="transaction-info">
+            <form>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="col-lg-12" style="text-align: center;">
+                  <h4>Item / Product</h4>
+                  <img src="dist/img/item.png" height="190">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Asset Number</label>
+                    <input type="" class="form-control" id="" readonly="" size=23>
+                  </div>
+                  <div class="form-group">
+                    <label>RFID Tag</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Asset Description</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Amount of Purchase</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Department</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Date of Purchase</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Asset Name</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Quantity / Unit</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Name of Responsible</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                  <div class="form-group">
+                    <label>Life Span</label>
+                    <input type="" class="form-control" readonly="">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label>Remarks</label>
+                    <textarea class="form-control" rows="5" readonly=""></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="print" class="btn btn-success" type="button" name="save-details">Print</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <script src="dist/js/jquery.dataTables.min.js"></script>
+
+    <script src="dist/js/dataTables.bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#example').DataTable( {
+              "scrollY":        "350px",
+              "scrollCollapse": true,
+              "paging":         false,
+              "pagingType": "full numbers"
+          } );
+      } );
+    </script>
+
+  </body>
+</html>
