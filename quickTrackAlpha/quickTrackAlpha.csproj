@@ -179,9 +179,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\scripts.cshtml" />
     <Content Include="Views\Shared\styles.cshtml" />
-    <Content Include="Views\Asset\asset-check-out-transaction.html" />
-    <Content Include="Views\Asset\asset-disposal-transaction.html" />
-    <Content Include="Views\Asset\asset-enroll-transaction.html" />
     <Content Include="Views\Asset\assetCheckInTransaction.cshtml" />
     <Content Include="Views\Asset\assetManagement.cshtml" />
     <Content Include="Views\Dispatch\dispatch-job-order-trans.html" />
@@ -191,9 +188,6 @@
     <Content Include="Views\EPOD\epodManagement.cshtml" />
     <Content Include="Views\Home\index.cshtml" />
     <Content Include="Views\Home\mainPage.cshtml" />
-    <Content Include="Views\Inventory\inventory-delivery.html" />
-    <Content Include="Views\Inventory\inventory-on-hand-transaction.html" />
-    <Content Include="Views\Inventory\inventory-return-stock-transaction.html" />
     <Content Include="Views\Inventory\inventoryManagement.cshtml" />
     <Content Include="Views\Inventory\inventoryStock.cshtml" />
     <Content Include="Views\Preventive\maintenance-transactions.html" />
@@ -219,6 +213,12 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Views\Inventory\inventoryDelivery.cshtml" />
+    <Content Include="Views\Inventory\inventoryOnHandTransaction.cshtml" />
+    <Content Include="Views\Inventory\inventoryReturnStockTransaction.cshtml" />
+    <Content Include="Views\Asset\assetCheckOutTransaction.cshtml" />
+    <Content Include="Views\Asset\assetDisposalTransaction.cshtml" />
+    <Content Include="Views\Asset\assetEnrollTransaction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\dist\css\bootstrap-theme.css.map" />

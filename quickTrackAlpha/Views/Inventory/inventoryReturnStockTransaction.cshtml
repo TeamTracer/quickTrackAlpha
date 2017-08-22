@@ -1,3 +1,7 @@
+﻿@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>QuickTrack | Inventory On-hand Stock Transaction</title>
+    <title>QuickTrack | Inventory Return Stock Transaction</title>
 
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +17,7 @@
     <link href="dist/css/main-page.css" rel="stylesheet">
     <!-- Font-awesome CSS -->
     <link href="dist/css/font-awesome.min.css" rel="stylesheet">
-
+    <!-- DataTable Jquery CSS -->
     <link href="dist/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,117 +57,111 @@
     </nav>
 
     <div class="container">
-    <h3 class="page-title">Received / On-Hand Stock Transactions</h3><br>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="panel panel-info" style="border: none;">
-            <div class="panel-body">
-              <table id="example" class="table table-hover dataTable" cellspacing="0" width="100%">
-                <thead style="text-align: center; background-color: #165469; color: white;">
-                  <tr>
-                    <th></th>
-                    <th>Date</th>
-                    <th>GRN #</th>
-                    <th>Supplier Name</th>
-                    <th>Items / Product</th>
-                    <th>Quantity</th>
-                    <th></th>
-                  </tr> 
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>January 1, 2017</td>
-                    <td>0002514568</td>
-                    <td>Lenovo</td>
-                    <td>Laptop</td>
-                    <td>5</td>
-                    <td>
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+      <h3 class="page-title">Return Stock Transactions</h3><br>
+      <div class="panel-body">
+        <table id="example" class="table table-hover dataTable" cellspacing="0" width="100%">
+          <thead style="text-align: center; background-color: #165469; color: white;">
+            <tr>
+              <th></th>
+              <th>Date</th>
+              <th>Return Control #</th>
+              <th>Return From</th>
+              <th>Return To</th>
+              <th>Quantity</th>
+              <th></th>
+            </tr> 
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Simplevia</td>
+              <td>Simplevia</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>January 1, 2017</td>
+              <td>0002514568</td>
+              <td>Lenovo</td>
+              <td>Laptop</td>
+              <td>5</td>
+              <td>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#transaction"><span class="glyphicon glyphicon-eye-open" style="color: black;"></span></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -183,11 +181,11 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label>GRN # </label>
+                  <label>Return Control # </label>
                   <input type="" class="form-control" id="" readonly="" size=23>
                 </div>
                 <div class="form-group">
-                  <label>Date Received</label>
+                  <label>Return From</label>
                   <input type="" class="form-control" readonly="">
                 </div>
                 <div class="form-group">
@@ -201,25 +199,25 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label>Bill of Lading No.</label>
+                  <label>Date</label>
                   <input type="" class="form-control" readonly="">
                 </div>
                 <div class="form-group">
-                  <label>Supplier Name</label>
+                  <label>Return To</label>
                   <input type="" class="form-control" readonly="">
                 </div>
                 <div class="form-group">
-                  <label>Contact Person</label>
+                  <label>Date of Return</label>
                   <input type="" class="form-control" readonly="">
                 </div>
                 <div class="form-group">
-                  <label>Shipping Mode</label>
+                  <label>Cost</label>
                   <input type="" class="form-control" readonly="">
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="form-group">
-                  <label>Remarks</label>
+                  <label>Reason of Return</label>
                   <textarea class="form-control" rows="5" readonly=""></textarea>
                 </div>
               </div>
@@ -231,6 +229,7 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -241,9 +240,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap.min.js"></script>
-
+    <!-- Jquery DataTables --> 
     <script src="dist/js/jquery.dataTables.min.js"></script>
-
     <script src="dist/js/dataTables.bootstrap.min.js"></script>
 
     <script type="text/javascript">
@@ -259,3 +257,4 @@
 
   </body>
 </html>
+
