@@ -181,16 +181,12 @@
     <Content Include="Views\Shared\styles.cshtml" />
     <Content Include="Views\Asset\assetCheckInTransaction.cshtml" />
     <Content Include="Views\Asset\assetManagement.cshtml" />
-    <Content Include="Views\Dispatch\dispatch-job-order-trans.html" />
-    <Content Include="Views\Dispatch\dispatch-monitoring.html" />
-    <Content Include="Views\Dispatch\dispatch-schedule.html" />
     <Content Include="Views\Dispatch\dispatchManagement.cshtml" />
     <Content Include="Views\EPOD\epodManagement.cshtml" />
     <Content Include="Views\Home\index.cshtml" />
     <Content Include="Views\Home\mainPage.cshtml" />
     <Content Include="Views\Inventory\inventoryManagement.cshtml" />
     <Content Include="Views\Inventory\inventoryStock.cshtml" />
-    <Content Include="Views\Preventive\maintenance-transactions.html" />
     <Content Include="Views\Preventive\preventiveMaintenanceManagement.cshtml" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -219,6 +215,10 @@
     <Content Include="Views\Asset\assetCheckOutTransaction.cshtml" />
     <Content Include="Views\Asset\assetDisposalTransaction.cshtml" />
     <Content Include="Views\Asset\assetEnrollTransaction.cshtml" />
+    <Content Include="Views\Dispatch\dispatchJobOrderTrans.cshtml" />
+    <Content Include="Views\Dispatch\dispatchMonitoring.cshtml" />
+    <Content Include="Views\Dispatch\dispatchSchedule.cshtml" />
+    <Content Include="Views\Preventive\preventiveMaintenanceTransactions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\dist\css\bootstrap-theme.css.map" />
