@@ -37,6 +37,16 @@ namespace quickTrackAlpha
 				url: "{controller}/{action}/{id}",
 				defaults: new { controller = "Dispatch", action = "dispatchManagement", id = UrlParameter.Optional }
 			);
+			routes.MapRoute(
+				name: "dispatchSchedule",
+				url: "{controller}/{action}/{id}",
+				defaults: new { controller = "Dispatch", action = "dispatchSchedule", id = UrlParameter.Optional }
+			);
+			routes.MapRoute(
+				name: "dispatchMonitoring",
+				url: "{controller}/{action}/{id}",
+				defaults: new { controller = "Dispatch", action = "dispatchMonitoring", id = UrlParameter.Optional }
+			);
 
 			//EPOD Routes
 			routes.MapRoute(

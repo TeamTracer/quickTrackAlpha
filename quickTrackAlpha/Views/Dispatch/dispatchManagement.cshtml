@@ -13,7 +13,7 @@
 
     @Html.Partial("styles")
 
-    <link href="dist/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/css/dist/css/jquery.dataTables.min.css")" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,7 +90,7 @@
                             <div class="col-lg-12">
                               <div class="col-lg-6">
                                 <div class="form-group" style="text-align: center;"><br><br><br>
-                                  <img class="col-lg-12" id="blah" src="dist/img/logo.png" height="100" width="380">
+                                  <img class="col-lg-12" id="blah" src="@Url.Content("~/Content/images/logo.png")" height="100" width="380">
                                 </div>
                                 
                               </div>
@@ -616,17 +616,17 @@
               </div>
               <!-- End of Modal -->
             </div>  
-
+                
             <div class="col-lg-2">
               <div class="form-group">
-                <a href="dispatch-schedule.html" type="button" class="btn btn-default btn-block"><strong>DISPATCH<br> SCHEDULE</strong></a>
+                <a href="@Url.Action("dispatchSchedule", null, new { area = string.Empty, controller = "Dispatch" }, Request.Url.Scheme)" type="button" class="btn btn-default btn-block"><strong>DISPATCH<br> SCHEDULE</strong></a>
               </div>
             </div>
 
 
             <div class="col-lg-2">
               <div class="form-group">
-                <a href="dispatch-monitoring.html" type="button" class="btn btn-default btn-block"><strong>DISPATCH<br> MONITORING</strong></a>
+                <a href="@Url.Action("dispatchMonitoring", null, new { area = string.Empty, controller = "Dispatch" }, Request.Url.Scheme)" type="button" class="btn btn-default btn-block"><strong>DISPATCH<br> MONITORING</strong></a>
               </div>
             </div>
 
@@ -980,7 +980,7 @@
                   <div style="display:inline-block;width:100%;overflow-y:auto;padding-top: 0; border-top: 1px dotted #8c8b8b;">
                     <ul class="timeline timeline-horizontal">
                       <li class="timeline-item">
-                        <div class="timeline-badge"><img src="dist/img/id1.jpg" style="border-radius: 20px;" width="60"></div>
+                        <div class="timeline-badge"><img src="@Url.Content("~/Content/images/id1.jpg")" style="border-radius: 20px;" width="60"></div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="timeline-title">Juan Dela Cruz</h4>
@@ -992,7 +992,7 @@
                         </div>
                       </li>
                       <li class="timeline-item">
-                        <div class="timeline-badge success"><img src="dist/img/id2.jpg" style="border-radius: 20px;" width="60"></div>
+                        <div class="timeline-badge success"><img src="@Url.Content("~/Content/images/id2.jpg")" style="border-radius: 20px;" width="60"></div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="timeline-title">Pedro Matigas </h4>
@@ -1004,7 +1004,7 @@
                         </div>
                       </li>
                       <li class="timeline-item">
-                        <div class="timeline-badge info"><img src="dist/img/id3.jpg" style="border-radius: 20px;" width="60"></div>
+                        <div class="timeline-badge info"><img src="@Url.Content("~/Content/images/id3.jpg")" style="border-radius: 20px;" width="60"></div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="timeline-title">James Reid</h4>
@@ -1016,7 +1016,7 @@
                         </div>
                       </li>
                       <li class="timeline-item">
-                        <div class="timeline-badge danger"><img src="dist/img/id4.jpg" style="border-radius: 20px;" width="60"></div>
+                        <div class="timeline-badge danger"><img src="@Url.Content("~/Content/images/id4.jpg")" style="border-radius: 20px;" width="60"></div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="timeline-title">Roberto Roberto</h4>
@@ -1028,7 +1028,7 @@
                         </div>
                       </li>
                       <li class="timeline-item">
-                        <div class="timeline-badge warning"><img src="dist/img/id5.jpg" style="border-radius: 20px;" width="60"></div>
+                        <div class="timeline-badge warning"><img src="@Url.Content("~/Content/images/id5.jpg")" style="border-radius: 20px;" width="60"></div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="timeline-title">Kanor Guzman</h4>
@@ -1040,7 +1040,7 @@
                         </div>
                       </li>
                       <li class="timeline-item">
-                        <div class="timeline-badge"><img src="dist/img/id7.jpg" style="border-radius: 20px;" width="60" height="60"></div>
+                        <div class="timeline-badge"><img src="@Url.Content("~/Content/images/id7.jpg")" style="border-radius: 20px;" width="60" height="60"></div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="timeline-title">Jun-jun Magbanwa</h4>
@@ -1069,13 +1069,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
     <!-- API from google DO NOT DELETE -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGtobnbmpN7r9pmFkmz9ZCrA2H4gXoqUY&callback=initMap"></script>
 
-    <script src="dist/js/jquery.dataTables.min.js"></script>
-
-    <script src="dist/js/dataTables.bootstrap.min.js"></script>
+    <!--datatables-->
+    <script src="@Url.Content("~/Scripts/dataTables.bootstrap.min.css")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.dataTables.min.css")"></script>
 
     <!-- Exact location of Centerpoint Bldg. from Google Map -->
     <script> 

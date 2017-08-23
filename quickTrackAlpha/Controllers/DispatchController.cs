@@ -7,8 +7,21 @@ using System.Web.Mvc;
 namespace QuickTrack.Controllers
 {
     public class DispatchController : Controller
-    {
-        public ActionResult dispatchManagement()
+	{
+		//
+		// GET: /Dispatch/
+
+		public ActionResult dispatchManagement()
+        {
+            return View ();
+		}
+
+		public ActionResult dispatchSchedule()
+		{
+			return View();
+		}
+
+        public ActionResult dispatchMonitoring()
         {
             return View ();
         }

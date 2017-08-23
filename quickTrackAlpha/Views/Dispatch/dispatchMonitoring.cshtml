@@ -11,14 +11,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>QuickTrack | Dispatch Monitoring</title>
 
-    <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Main Page CSS -->
-    <link href="dist/css/main-page.css" rel="stylesheet">
-    <!-- Font-awesome CSS -->
-    <link href="dist/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="dist/css/jquery.dataTables.min.css" rel="stylesheet">
+    @Html.Partial("styles")
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -253,11 +246,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/bootstrap.min.js"></script>
-
-    <script src="dist/js/jquery.dataTables.min.js"></script>
-
-    <script src="dist/js/dataTables.bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <!--datatables-->
+    <script src="@Url.Content("~/Scripts/dataTables.bootstrap.min.css")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.dataTables.min.css")"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {

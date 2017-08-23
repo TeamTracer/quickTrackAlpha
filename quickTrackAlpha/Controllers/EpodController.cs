@@ -7,8 +7,11 @@ using System.Web.Mvc;
 namespace QuickTrack.Controllers
 {
     public class EpodController : Controller
-    {
-        public ActionResult epodManagement()
+	{
+		//
+		// GET: /Epod/
+
+		public ActionResult epodManagement()
         {
             return View ();
         }
