@@ -14,7 +14,7 @@ namespace quickTrackAlpha
 				defaults: new { controller = "Home", action = "index", id = UrlParameter.Optional }
 			);
 			routes.MapRoute(
-				name: "Default2",
+				name: "mainPage",
 				url: "{controller}/{action}/{id}",
 				defaults: new { controller = "Home", action = "mainPage", id = UrlParameter.Optional }
 			);

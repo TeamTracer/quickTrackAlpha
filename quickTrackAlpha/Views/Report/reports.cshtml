@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>reports</title>
+</head>
+<body>
+		@ViewBag.Message
+        @ViewBag.Message2
+		<button onclick="location.href='@Url.Action("Contact", "Report")'">Press Me!</button>
+		<br>
+		<br>      
+        <button onclick="location.href='@Url.Action("sampleViewData", "Report")'">Press Me to ViewData</button>
+</body>
+</html>
+

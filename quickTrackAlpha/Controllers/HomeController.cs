@@ -18,7 +18,12 @@ namespace QuickTrack.Controllers
         public ActionResult mainPage()
         {
             return View();
-        }
+		}
+
+		public ActionResult Teknik()
+		{
+			return View();
+		}
 
     }
 }
