@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+    var date = DateTime.Now.ToShortDateString();
+    string message = "Hello World!";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+</head>
+<body>
+		@ViewBag.Message
+		<br>
+        The value is = @ViewBag.Message2
+		<br>
+		<br>
+
+        <text>Today's date is:</text> @date <br/>
+        @message  
+        @message  
+        @message  
+        @message  
+</body>
+</html>
+

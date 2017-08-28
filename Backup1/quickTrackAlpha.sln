@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quickTrackAlpha", "quickTrackAlpha\quickTrackAlpha.csproj", "{FEBA070B-2051-42C6-A536-C81215887162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quickTrackAlpha.Tests", "quickTrackAlpha.Tests\quickTrackAlpha.Tests.csproj", "{4F72DDC9-7073-481E-A449-AF73154439C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEBA070B-2051-42C6-A536-C81215887162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBA070B-2051-42C6-A536-C81215887162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBA070B-2051-42C6-A536-C81215887162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBA070B-2051-42C6-A536-C81215887162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F72DDC9-7073-481E-A449-AF73154439C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F72DDC9-7073-481E-A449-AF73154439C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F72DDC9-7073-481E-A449-AF73154439C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F72DDC9-7073-481E-A449-AF73154439C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

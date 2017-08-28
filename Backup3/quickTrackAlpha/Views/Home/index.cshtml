@@ -1,0 +1,90 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>QuickTrack | Login</title>
+
+    <!-- Bootstrap -->
+    <link href="@Url.Content("~/Content/css/dist/css/bootstrap.min.css")" rel="stylesheet">
+
+    <link href="@Url.Content("~/Content/css/dist/css/style.css")" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+  <!-- Background Image -->
+  <div id="left">
+    <br><br><br><br><br><br><br>
+    <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="@Url.Content("~/Images/Logo.png")" id="logo">
+    <div id="log-in">
+        <div style="margin-bottom: 20px; margin-top: 20px;">
+          <input id="login-username" type="text" class="form-control input-lg " name="username" value="" placeholder="Username">
+        </div>
+        <div style="margin-bottom: 20px">
+          <input id="login-password" type="password" class="form-control input-lg" name="password" placeholder="Password">
+        </div>
+        <div style="margin-bottom: 15px; text-align: center;">
+          <a type="button" class="btn btn-success btn-lg btn-block closebtn" onclick="closeNav()" onclick="setTimeout(myFunction, 500)" href="@Url.Action("mainPage", null, new { area = string.Empty, controller = "Home" }, Request.Url.Scheme)" >Login</a>
+        </div>
+        <div style="text-align: center;">
+          <a href="#"><label><u>Forgot Password?</u></label></a>
+        </div>
+    </div>
+  </div>
+  <div id="right">
+    <br><br><br><br><br><br><br>
+    <div id="login">
+        <div style="margin-bottom: 20px; margin-top: 20px;">
+          <input id="login-username" type="text" class="form-control input-lg " name="username" value="" placeholder="Username">
+        </div>
+        <div style="margin-bottom: 20px">
+          <input id="login-password" type="password" class="form-control input-lg" name="password" placeholder="Password">
+        </div>
+        <div style="margin-bottom: 15px; text-align: center;">
+          <a type="button" class="btn btn-success btn-lg btn-block closebtn" onclick="closeNav()" href="@Url.Action("mainPage", null, new { area = string.Empty, controller = "Home" }, Request.Url.Scheme)" >Login</a>
+        </div>
+        <div style="text-align: center;">
+          <a href="#"><label><u>Forgot Password?</u></label></a>
+        </div>
+    </div>
+  </div>
+  <!-- End of background image -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function closeNav() {
+          document.getElementById("left").style.width = "0";
+          document.getElementById("right").style.width= "0";
+          
+      }
+    </script>
+
+    <script type="text/javascript">
+      function myFunction (){
+       window.location="main-page.html"
+      }
+    </script>
+
+ 
+
+  </body>
+</html>
